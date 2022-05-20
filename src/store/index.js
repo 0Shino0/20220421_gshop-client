@@ -5,6 +5,7 @@ vuex最核心的管理对象store   ===>    仓库
 import Vue from 'vue'
 import Vuex from 'vuex'
 import modules from './modules'
+
 // import home from './modules/home'
 // import users from '@/store/modules/users'
 

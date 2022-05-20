@@ -1,0 +1,26 @@
+[
+    {
+        "consignee":"admin",
+        "id":1,
+        "isDefault":"1",
+        "phoneNum":"15010658793",
+        "userAddress":"北京市昌平区宏福科技园综合楼6层",
+        "userId":"1"
+    },
+    {
+        "consignee":"李四",
+        "id":2,
+        "isDefault":"0",
+        "phoneNum":"13590909098",
+        "userAddress":"北京市昌平区宏福科技园综合楼6层",
+        "userId":"2"
+    },
+    {
+        "consignee":"张三",
+        "id":3,
+        "isDefault":"0",
+        "phoneNum":"18012340987",
+        "userAddress":"北京市昌平区宏福科技园综合楼6层",
+        "userId":"3"
+    }
+]

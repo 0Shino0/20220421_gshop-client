@@ -10,6 +10,7 @@ import {
     reqLikes
 } from '@/api'
 
+
 const state = {
     categoryList: [],
     bannerList: [],

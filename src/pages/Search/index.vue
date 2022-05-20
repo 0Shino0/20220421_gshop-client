@@ -78,9 +78,9 @@
               <li class="yui3-u-1-5" v-for="item in goodsList" :key="item.id">
                 <div class="list-wrap">
                   <div class="p-img">
-                    <a href="javascript:">
-                      <img :src="item.defaultImg" />
-                    </a>
+                    <router-link :to="'/detail/'+ item.id">
+                      <img v-lazy="item.defaultImg" />
+                    </router-link>
                   </div>
                   <div class="price">
                     <strong>
@@ -89,7 +89,9 @@
                     </strong>
                   </div>
                   <div class="attr">
-                    <a href="javascript:" title="">{{item.title}}</a>
+                    <router-link :to="'/detail/'+ item.id">
+                      {{item.title}}
+                    </router-link>
                   </div>
                   <div class="commit">
                     <i class="command">已有<span>2000</span>人评价</i>
@@ -102,13 +104,13 @@
               </li>
             </ul>
           </div>
-            <Pagination
+            <MyPagination
               :currentPage = "options.pageNo"
               :pageSize = "options.pageSize"
               :total = "total"
-              :showPageNo   = "3"
-              @currentChange = "currentChange"
-            ></Pagination>
+              :showPageNo   = "5"
+              @currentChange = "getShopList"
+            ></MyPagination>
         </div>
       </div>
     </div>
@@ -183,10 +185,9 @@
       /* 
       当前页码发生改变的事件回调
       */
-      currentChange(page){
-        this.options.pageNo = page
-        this.getShopList()
-      },
+      // currentChange(page){
+      //   this.getShopList(page)
+      // },
 
       /* 
       设置新的排序搜索
@@ -323,7 +324,9 @@
         /* 
         异步获取商品列表
         */
-        getShopList(){
+        getShopList(page=1){
+          // 更新options中的pageNo
+          this.options.pageNo = page
           // 发送搜索请求
           this.$store.dispatch('getProductList',this.options)
         }
