@@ -146,7 +146,7 @@ import {mapGetters, mapState} from 'vuex'
         }
       }
     },
-    
+    /*  */
     computed:{
       // userAddressList 接口损毁
       ...mapGetters(['detailArrayList']),

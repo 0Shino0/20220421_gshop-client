@@ -159,7 +159,6 @@ export default {
       // 只有当还没有离开整个分类的div是才更新下标
       if(this.currentIndex !== -2)
         this.currentIndex = index;
-
     },60,/* {
       trailing:'false'  //最后一次事件不延迟处理
     } */),
@@ -170,7 +169,7 @@ export default {
     toSearch(event) {
       const target = event.target;
       console.dir(target);
-      const { categoryname, category1id, category2id, category3id } =
+      const { categoryname, category1id, category2id, category3id } = 
         target.dataset;
 
       // if(target.tagName.toUpperCase() === 'A'){
@@ -205,7 +204,6 @@ export default {
        }else{
          this.$router.push(location);
        }
-
         // 隐藏一级列表
         this.hideFirst()
       }

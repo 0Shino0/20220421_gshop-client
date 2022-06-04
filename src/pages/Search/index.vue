@@ -23,7 +23,6 @@
             <li class="with-x" v-for="prop in options.props" :key="prop">{{prop}}
               <i @click="removeProp(index)">×</i>
             </li>
-
           </ul>
         </div>
 
@@ -75,6 +74,7 @@
           </div>
           <div class="goods-list">
             <ul class="yui3-g">
+              <!-- 商品列表 -->
               <li class="yui3-u-1-5" v-for="item in goodsList" :key="item.id">
                 <div class="list-wrap">
                   <div class="p-img">
@@ -249,7 +249,7 @@
       */
       setTrademark(trademark){
         //  如果当前品牌已经在条件中了，直接结束
-        if(trademark===this.options.trademark) return 
+        if(trademark===this.options.trademark) return
         
         //  更新options中的trademark为指定的值
         // this.options.trademark = trademark

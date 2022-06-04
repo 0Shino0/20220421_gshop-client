@@ -53,7 +53,7 @@
             prevEl: '.swiper-button-prev',
           },
         }
-      }  
+      }
     },
  
     methods:{

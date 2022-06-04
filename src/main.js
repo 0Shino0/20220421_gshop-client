@@ -40,7 +40,6 @@ new Vue({
         // 将所有的接口函数挂载在 Vue原型上
         // 组件对象的原型 就是 Vue的原型
         Vue.prototype.$API = API     // 当不适用vuex的时候，可以吧接口请求函数全部装在对象当中关在Vue原型身上
-
     },
 
     render:h => h(App),

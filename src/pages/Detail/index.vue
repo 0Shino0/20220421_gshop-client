@@ -80,7 +80,6 @@
               <div class="controls">
                 <!-- 
                   input 事件  输入的时候同步触发
-
                   blur 事件  失去焦点的时候触发不管内容有没有变化
                   change事件  事件焦点的时候触发，但是内容
                  -->
@@ -373,7 +372,6 @@
       imgList(){
         return this.skuInfo.skuImageList || []
       }
-
     },
 
     mounted(){
@@ -416,7 +414,7 @@
           // sessionStorage   setItem  getItem   removeItem  clear
           // 区别：localStorage是永久存储   sessionStorage浏览器关闭就没了 
 
-          // 序列化   将js数据转化为json数据s
+          // 序列化   将js数据转化为json数据
           sessionStorage.setItem('SKUINFO_KEY',JSON.stringify(this.skuInfo))
           this.$router.push('/addcartsuccess?skuNum='+ this.skuNum)
 
@@ -430,7 +428,6 @@
         // }
 
       }
-
     }
   }
 </script>
