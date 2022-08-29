@@ -2,7 +2,7 @@
  * @Author: shino 1471386835@qq.com
  * @Date: 2022-04-21 07:42:24
  * @LastEditors: shino 1471386835@qq.com
- * @LastEditTime: 2022-06-04 11:12:04
+ * @LastEditTime: 2022-06-06 21:30:06
  * @FilePath: \shop-client\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -24,6 +24,7 @@ http://gmall-h5-api.atguigu.cn/api
     # 或者
     yarn
 ```
+
 
 ##### 展示
 `yarn serve`

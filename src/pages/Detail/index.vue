@@ -219,7 +219,7 @@
           <h4 class="kt">选择搭配</h4>
           <div class="good-suits">
             <div class="master">
-              <img src="./images/l-m01.png" />
+              <img src="{./images/l-m01.png}" />
               <p>￥5299</p>
               <i>+</i>
             </div>
@@ -340,8 +340,8 @@
 
 <script>
   import {mapGetters} from 'vuex'
-  import ImageList from './ImageList/ImageList'
-  import Zoom from './Zoom/Zoom'
+  import ImageList from '@/pages/Detail/ImageList'
+  import Zoom from '@/pages/Detail/Zoom'
 
   export default {
     name: 'Detail',

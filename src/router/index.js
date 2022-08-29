@@ -1,6 +1,4 @@
-/* 
-路由器对象
-*/
+
 import Vue from "vue";
 import VueRouter from 'vue-router'
 import routes from '@/router/routes'
@@ -31,6 +29,18 @@ const router = new VueRouter({
         return { x: 0, y: 0 }
     }
 })
+
+// 处理loading错误
+router.onError((error) => {
+    const pattern = /Loading chunk (\d)+ failed/g;
+    const isChunkLoadFailed = error.message.match(pattern);
+    const targetPath = router.history.pending.fullPath;
+    if(isChunkLoadFailed){
+        router.replace(targetPath);
+    }
+})
+
+
 
 // 全局前置导航守卫
 // token校验

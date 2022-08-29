@@ -147,6 +147,7 @@ import {mapGetters, mapState} from 'vuex'
       }
     },
     /*  */
+    // 目前只用主用户可以获取数据 1370000000
     computed:{
       // userAddressList 接口损毁
       ...mapGetters(['detailArrayList']),

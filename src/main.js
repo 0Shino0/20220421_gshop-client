@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from '@/App'
 import store from './store'
-import router from '@/router/index'
+
 import TypeNav from '@/components/TypeNav'
 import MyPagination from '@/components/Pagination'
 
@@ -13,6 +13,11 @@ import * as API from '@/api'
 
 import VueLazyload from 'vue-lazyload'
 import loading from '@/assets/images/loading.gif'
+
+import router from '@/router/index'
+
+// import './rem'
+
 // 在图片界面没有进入到可视范围前不加载,在没有得到图片前线显示loading图片
 Vue.use(VueLazyload,{ // 内部自定义了一个指令lazy
     loading,        // 指定为假得到图片之前的loading图片

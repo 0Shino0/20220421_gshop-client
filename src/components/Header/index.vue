@@ -36,7 +36,7 @@
       <h1 class="logoArea">
         <!-- 声明式导航 -->
         <router-link to="/">
-            <img src="./images/logo.png" alt="" />
+            <img src="@/components/Header/images/logo.png" alt="" />
         </router-link>
       </h1>
       <div class="searchArea">

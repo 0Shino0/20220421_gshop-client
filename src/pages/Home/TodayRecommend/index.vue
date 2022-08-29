@@ -4,7 +4,7 @@
       <ul class="recommend">
         <li class="clock">
           <div class="time">
-            <img src="./images/clock.png"/>
+            <img src="@/pages/Home/TodayRecommend/images/clock.png"/>
             <h3>今日推荐</h3>
           </div>
         </li>

@@ -1,8 +1,8 @@
 /* 
 管理登录用户相关数据的vuex子模块
 */
-import {getUserTempId,setToken,getToken,removeToken} from '@/utils/userabout.js'
-import { reqUserRegister,reqUserLogin,reqUserInfo,reqUserLogout } from '../../api'
+import {getUserTempId,setToken,getToken,removeToken} from '@/utils/userabout'
+import { reqUserRegister,reqUserLogin,reqUserInfo,reqUserLogout } from '@/api'
 
 // ****************页面刷新或者项目重新启动，之前的state当中所有的数据全部销毁重新初始化****************
 

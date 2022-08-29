@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "crm": "vue-cli-service build --mode crm",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -14,6 +15,8 @@
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
     "nprogress": "^0.2.0",
+    "postcss-loader": "^7.0.0",
+    "postcss-px2rem": "^0.3.0",
     "qrcode": "^1.5.0",
     "swiper": "^5.4.5",
     "vee-validate": "2.2.15",

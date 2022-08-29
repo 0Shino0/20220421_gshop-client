@@ -1,14 +1,60 @@
-module.exports = {
-    lintOnSave: false, // 关闭ESLint的规则检查
-    // lintOnSave: 'warning', // 输出提示错误, 但项目继续运行
+/*
+ * @Author: shino 1471386835@qq.com
+ * @Date: 2022-04-21 08:02:57
+ * @LastEditors: shino 1471386835@qq.com
+ * @LastEditTime: 2022-06-07 17:48:20
+ * @FilePath: \shop-client\vue.config.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+// const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
-    devServer:{   //只用与开发环境
-      proxy:{
-        'api':{       //支队请求路由以/api开头的其你去进行代理转发
-          target:'http://gmall-h5-api.atguigu.cn',    //转发的目标url
-          changeOrigin:true,       //支持跨域
-          // pathRewrite:{'^/api':''}     // 后台接口都有/api
+// 适配移动端
+const px2rem = require('postcss-px2rem');
+
+module.exports = {
+
+  // publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : "./", // 默认'/'，部署应用包时的基本 URL
+  // outputDir: process.env.outputDir || 'dist', // 'dist', 生产环境构建文件的目录
+  // assetsDir: "", // 相对于outputDir的静态资源(js、css、img、fonts)目录
+  lintOnSave: false,
+  // runtimeCompiler: true, // 是否使用包含运行时编译器的 Vue 构建版本
+  // productionSourceMap: !IS_PROD, // 生产环境的 source map
+  // parallel: require("os").cpus().length > 1,
+  // pwa: {},
+  // chainWebpack: config => {
+  //   // 修复HMR
+  //   config.resolve.symlinks(true);
+  // },
+  devServer: {
+    // overlay: { // 让浏览器 overlay 同时显示警告和错误
+    //   warnings: true,
+    //   errors: true
+    // },
+    // open: false, // 是否打开浏览器
+    // host: "localhost",
+    // port: "8080", // 代理断就
+    // https: false,
+    // hotOnly: false, // 热更新
+    proxy: {
+      "/api": {
+        target:
+          "http://gmall-h5-api.atguigu.cn", // 目标代理接口地址
+        secure: false,
+        changeOrigin: true, // 开启代理，在本地创建一个虚拟服务端
+        // ws: true, // 是否启用websockets
+        pathRewrite: {
+          "^/api": "/"
         }
       }
     }
-  }
+  },
+  // 适配移动端
+  // css:{
+  //   loaderOptions:{
+  //     postcss:{
+  //       plugins:[px2rem({remUnit:37.5})]  //以设计搞为标准计算出来的根字体大小
+  //     }
+  //   }
+  // }
+
+}

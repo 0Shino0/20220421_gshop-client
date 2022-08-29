@@ -36,5 +36,4 @@ export {
     setToken,
     getToken,
     removeToken
-
 }

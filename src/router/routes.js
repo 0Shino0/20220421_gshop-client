@@ -9,7 +9,7 @@ const Search = () => import('@/pages/Search')
 const Register = () => import('@/pages/Register')
 const Login = () => import('@/pages/Login')
 const Detail = () => import('@/pages/Detail')
-const AddCartSuccess = () => import('@/pages/AddCartSuccess')
+// const AddCartSuccess = () => import('@/pages/AddCartSuccess')
 const ShopCart = () => import('@/pages/ShopCart')
 const Trade = () => import('@/pages/Trade')
 const Pay = () => import('@/pages/Pay')
@@ -21,7 +21,7 @@ const GroupOrder = () => import('@/pages/Center/GroupOrder')
 // import Register from '@/pages/Register'
 // import Login from '@/pages/Login'
 // import Detail from '@/pages/Detail'
-// import AddCartSuccess from '@/pages/AddCartSuccess'
+import AddCartSuccess from '@/pages/AddCartSuccess'
 // import ShopCart from '@/pages/ShopCart'
 // import Trade from '@/pages/Trade'
 // import Pay from '@/pages/Pay'
@@ -105,18 +105,18 @@ export default [
         path:'/addcartsuccess',
         component:AddCartSuccess,
         // 路由独享守卫
-        // beforeEnter:(to,from,next) => {
-        //     let skuNum = to.query.skuNum
-        //     let skuInfo =  sessionStorage.getItem('SKUINFO_KEY')
+        beforeEnter:(to,from,next) => {
+            let skuNum = to.query.skuNum
+            let skuInfo =  sessionStorage.getItem('SKUINFO_KEY')
 
-        //     // 如果skuNum 与 skuInfo 存在 则放行
-        //     if(skuNum && skuInfo){
-        //         next()
-        //     }else{
-        //         alert('必须带够参数')
-        //         next('/')
-        //     }
-        // }
+            // 如果skuNum 与 skuInfo 存在 则放行
+            if(skuNum && skuInfo){
+                next()
+            }else{
+                alert('必须带够参数')
+                next('/')
+            }
+        }
     },
     {
         /* 

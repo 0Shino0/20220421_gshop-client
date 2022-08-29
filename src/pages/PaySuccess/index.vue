@@ -1,9 +1,17 @@
+<!--
+ * @Author: shino 1471386835@qq.com
+ * @Date: 2022-05-11 11:23:12
+ * @LastEditors: shino 1471386835@qq.com
+ * @LastEditTime: 2022-06-04 22:28:28
+ * @FilePath: \shop-client\src\pages\PaySuccess\index.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <div class="paysuccess">
 
     <div class="success">
       <h3>
-        <img src="./images/right.png" width="48" height="48">
+        <img src="@/pages/PaySuccess/images/right.png" width="48" height="48">
         恭喜您，支付成功啦！
       </h3>
       <div class="paydetail">

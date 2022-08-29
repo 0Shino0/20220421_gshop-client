@@ -31,8 +31,8 @@
         </div>
         <div class="step-cont">
           <ul class="payType">
-            <li><img src="./images/pay2.jpg"></li>
-            <li><img src="./images/pay3.jpg"></li>
+            <li><img src="@/pages/Pay/images/pay2.jpg"></li>
+            <li><img src="@/pages/Pay/images/pay3.jpg"></li>
           </ul>
 
         </div>
@@ -44,19 +44,19 @@
           </div>
           <div class="step-cont">
             <ul class="payType">
-              <li><img src="./images/pay10.jpg"></li>
-              <li><img src="./images/pay11.jpg"></li>
-              <li><img src="./images/pay12.jpg"></li>
-              <li><img src="./images/pay13.jpg"></li>
-              <li><img src="./images/pay14.jpg"></li>
-              <li><img src="./images/pay15.jpg"></li>
-              <li><img src="./images/pay16.jpg"></li>
-              <li><img src="./images/pay17.jpg"></li>
-              <li><img src="./images/pay18.jpg"></li>
-              <li><img src="./images/pay19.jpg"></li>
-              <li><img src="./images/pay20.jpg"></li>
-              <li><img src="./images/pay21.jpg"></li>
-              <li><img src="./images/pay22.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay10.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay11.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay12.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay13.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay14.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay15.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay16.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay17.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay18.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay19.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay20.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay21.jpg"></li>
+              <li><img src="@/pages/Pay/images/pay22.jpg"></li>
 
             </ul>
           </div>
